@@ -11,10 +11,11 @@
       <h1>I love cats</h1>
       <img src="https://s3.amazonaws.com/after-school-assets/cat-typing.gif">
 
-      <%= yield%>
-      
+      <% # When Sinatra looks at the erb :index file, it will check if
+         # there is a view titled layout.erb. If so, it loads the layout file
+         # and inserts the desired erb file in place of yield. %>
+      <%= yield %>
 
-      
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
